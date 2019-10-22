@@ -11,11 +11,11 @@
  */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("jspdf"));
+		module.exports = factory(require("jspdf/dist/jspdf.node.debug"));
 	else if(typeof define === 'function' && define.amd)
 		define(["jspdf"], factory);
 	else {
-		var a = typeof exports === 'object' ? factory(require("jspdf")) : factory(root["jsPDF"]);
+		var a = typeof exports === 'object' ? factory(require("jspdf/dist/jspdf.node.debug")) : factory(root["jsPDF"]);
 		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
 	}
 })(window, function(__WEBPACK_EXTERNAL_MODULE__7__) {
